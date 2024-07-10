@@ -10,13 +10,16 @@
 
 </head>
 <body>
-    <header class="header">
+    <header >
             <!-- Enlace al archivo SVG externo -->
-            <img src="./assets/logo.svg" alt="Logo">
     </header>
     <main class="presentacion">
+        <section class="header">
+           
+                <img src="./assets/logo.svg" alt="Logo">
+        </section>
         <section class="presentacion__contenido">
-            <input type="text" id="mi__input" placeholder="Ingrese el texto aqui" min="1" max="10" class="container__input">
+                <textarea  type="text" class="container__input" id="mi__input" placeholder="Ingrese el texto aqui" ></textarea>
 
                 <div class="presentacion_botones">
                     <div class="container__unicode">
@@ -24,10 +27,11 @@
                         <p class="unicode-char-p">Solo letras minúsculas y sin acentos</p>
                     </div>
 
+                    <div class="container__boton__general">
                     <button onclick="encryptText();" class="container__boton" id="boton_encriptar">Encriptar</button>
                     
                     <button onclick="decryptText();" class="container__boton" id="boton_desencriptar" >Desencriptar</button>
-                
+                    </div>
                 </div>
                
         </section>
